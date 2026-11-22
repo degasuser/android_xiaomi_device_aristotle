@@ -1,0 +1,21 @@
+# Xiaomi 13T (aristotle) - system_ext properties
+
+# Bluetooth
+persist.bluetooth.a2dp_offload.cap=sbc-aac
+persist.bluetooth.a2dp_offload.coex_buf_count=5
+
+# F2FS
+persist.fsck.disable_linear_lookup=on
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# IMS (MediaTek)
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# Telephony
+ro.telephony.default_network=32,32
+ro.telephony.iwlan_operation_mode=AP-assisted
+persist.radio.multisim.config=dsds

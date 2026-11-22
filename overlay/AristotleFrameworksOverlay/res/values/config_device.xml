@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Display cutout (front camera hole), from stock HyperOS 3 -->
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 H -33 V 117 H 33 V 0 H 0 Z</string>
+    <string name="config_mainBuiltInDisplayCutoutRectApproximation" translatable="false">@*android:string/config_mainBuiltInDisplayCutout</string>
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+    <bool name="config_maskMainBuiltInDisplayCutout">false</bool>
+
+    <!-- Rounded corners / status bar -->
+    <dimen name="rounded_corner_radius">90px</dimen>
+    <dimen name="rounded_corner_radius_top">90px</dimen>
+    <dimen name="rounded_corner_radius_bottom">90px</dimen>
+    <dimen name="status_bar_height_default">117px</dimen>
+    <dimen name="status_bar_height_portrait">117px</dimen>
+    <dimen name="status_bar_height_landscape">@dimen/status_bar_height_default</dimen>
+    <dimen name="quick_qs_offset_height">117px</dimen>
+
+    <!-- Under-display fingerprint (center x, center y, radius) in px, from
+         persist.vendor.sys.fp.fod.location.X_Y=505,2339 / size 210x210 -->
+    <integer-array name="config_udfps_sensor_props" translatable="false">
+        <item>610</item>
+        <item>2444</item>
+        <item>105</item>
+    </integer-array>
+    <bool name="config_is_powerbutton_fps">false</bool>
+
+    <!-- Stock HyperOS 3 brightness / auto-brightness configuration
+         (AospFrameworkResOverlay.apk from product) -->
+    <integer-array name="config_ambientBrighteningThresholds">
+        <item>2</item>
+        <item>6</item>
+        <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>400</item>
+        <item>600</item>
+        <item>1000</item>
+    </integer-array>
+    <integer-array name="config_ambientDarkeningThresholds">
+        <item>800</item>
+        <item>800</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+    </integer-array>
+    <integer-array name="config_ambientThresholdLevels">
+        <item>2</item>
+        <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>800</item>
+        <item>2000</item>
+        <item>4000</item>
+    </integer-array>
+    <array name="config_autoBrightnessDisplayValuesNits">
+        <item>4.5</item>
+        <item>8.5</item>
+        <item>12.8</item>
+        <item>16.7</item>
+        <item>20.7</item>
+        <item>25.5</item>
+        <item>31.3</item>
+        <item>32.9</item>
+        <item>34.7</item>
+        <item>35.6</item>
+        <item>38</item>
+        <item>38.9</item>
+        <item>40.6</item>
+        <item>42.4</item>
+        <item>44.4</item>
+        <item>46.6</item>
+        <item>47.7</item>
+        <item>49.9</item>
+        <item>52.2</item>
+        <item>54.5</item>
+        <item>57.8</item>
+        <item>59.2</item>
+        <item>61.7</item>
+        <item>64.6</item>
+        <item>68.1</item>
+        <item>70.6</item>
+        <item>72.6</item>
+        <item>75.6</item>
+        <item>78.8</item>
+        <item>81.9</item>
+        <item>87.7</item>
+        <item>88.1</item>
+        <item>88.6</item>
+        <item>89.4</item>
+        <item>90.2</item>
+        <item>90.6</item>
+        <item>91.3</item>
+        <item>92</item>
+        <item>92.7</item>
+        <item>93.3</item>
+        <item>93.7</item>
+        <item>94.6</item>
+        <item>95.6</item>
+        <item>95.9</item>
+        <item>96.5</item>
+        <item>98.7</item>
+        <item>100.2</item>
+        <item>102.7</item>
+        <item>104.4</item>
+        <item>106.6</item>
+        <item>108.2</item>
+        <item>110.5</item>
+        <item>112.3</item>
+        <item>114.2</item>
+        <item>115.6</item>
+        <item>118</item>
+        <item>119.1</item>
+        <item>121.4</item>
+        <item>122.8</item>
+        <item>125.4</item>
+        <item>126.1</item>
+        <item>128.5</item>
+        <item>129.6</item>
+        <item>131.8</item>
+        <item>133.6</item>
+        <item>134.2</item>
+        <item>152.3</item>
+        <item>170.3</item>
+        <item>188.4</item>
+        <item>202.9</item>
+        <item>232.8</item>
+        <item>263.2</item>
+        <item>293.1</item>
+        <item>306.9</item>
+        <item>376.5</item>
+        <item>436.8</item>
+        <item>452.3</item>
+        <item>464.4</item>
+        <item>481</item>
+        <item>493.3</item>
+        <item>504.2</item>
+        <item>531.9</item>
+        <item>551.1</item>
+        <item>571.4</item>
+        <item>595.6</item>
+        <item>619.2</item>
+        <item>644.2</item>
+        <item>669.1</item>
+        <item>688.9</item>
+        <item>711.2</item>
+        <item>731.9</item>
+        <item>755.6</item>
+        <item>774.9</item>
+        <item>796.3</item>
+        <item>817.5</item>
+        <item>836.3</item>
+        <item>856.4</item>
+        <item>876.7</item>
+        <item>902.9</item>
+        <item>933.8</item>
+        <item>964.8</item>
+        <item>995.6</item>
+        <item>1024</item>
+        <item>1047.8</item>
+        <item>1083.3</item>
+        <item>1085.6</item>
+        <item>1088.8</item>
+        <item>1090</item>
+        <item>1092.3</item>
+        <item>1095</item>
+        <item>1097.1</item>
+        <item>1099.7</item>
+        <item>1101.9</item>
+        <item>1104.6</item>
+        <item>1107.1</item>
+        <item>1110</item>
+        <item>1120.1</item>
+        <item>1131.2</item>
+        <item>1141</item>
+        <item>1151.3</item>
+        <item>1158.3</item>
+        <item>1168.7</item>
+        <item>1177</item>
+        <item>1188.7</item>
+        <item>1194.1</item>
+        <item>1195.9</item>
+        <item>1196.7</item>
+        <item>1200</item>
+        <item>1200</item>
+    </array>
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>36</item>
+        <item>54</item>
+        <item>65</item>
+        <item>163</item>
+        <item>199</item>
+        <item>243</item>
+        <item>278</item>
+        <item>376</item>
+        <item>483</item>
+        <item>622</item>
+        <item>663</item>
+        <item>671</item>
+        <item>671</item>
+        <item>671</item>
+        <item>679</item>
+        <item>679</item>
+        <item>679</item>
+        <item>687</item>
+        <item>687</item>
+        <item>696</item>
+        <item>696</item>
+        <item>696</item>
+        <item>696</item>
+        <item>704</item>
+        <item>704</item>
+        <item>712</item>
+        <item>728</item>
+        <item>737</item>
+        <item>745</item>
+        <item>761</item>
+        <item>769</item>
+        <item>786</item>
+        <item>794</item>
+        <item>810</item>
+        <item>819</item>
+        <item>827</item>
+        <item>851</item>
+        <item>859</item>
+        <item>868</item>
+        <item>884</item>
+        <item>892</item>
+        <item>909</item>
+        <item>917</item>
+        <item>933</item>
+        <item>950</item>
+        <item>1122</item>
+        <item>1285</item>
+        <item>1474</item>
+        <item>1678</item>
+        <item>1850</item>
+        <item>2104</item>
+        <item>2293</item>
+        <item>2416</item>
+        <item>3022</item>
+        <item>3276</item>
+        <item>3412</item>
+        <item>3549</item>
+        <item>3685</item>
+        <item>3822</item>
+        <item>3958</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+        <item>100</item>
+        <item>120</item>
+        <item>140</item>
+        <item>160</item>
+        <item>180</item>
+        <item>200</item>
+        <item>220</item>
+        <item>240</item>
+        <item>260</item>
+        <item>280</item>
+        <item>300</item>
+        <item>320</item>
+        <item>340</item>
+        <item>360</item>
+        <item>380</item>
+        <item>400</item>
+        <item>420</item>
+        <item>440</item>
+        <item>460</item>
+        <item>480</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>900</item>
+        <item>1100</item>
+        <item>1300</item>
+        <item>1500</item>
+        <item>1700</item>
+        <item>1900</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>5000</item>
+        <item>5500</item>
+        <item>6000</item>
+        <item>6500</item>
+        <item>7000</item>
+        <item>7500</item>
+        <item>8000</item>
+        <item>8500</item>
+        <item>9000</item>
+        <item>9500</item>
+        <item>10000</item>
+        <item>10500</item>
+        <item>11000</item>
+        <item>11500</item>
+        <item>12000</item>
+        <item>12500</item>
+        <item>13000</item>
+        <item>13500</item>
+        <item>14000</item>
+        <item>14500</item>
+        <item>15000</item>
+        <item>16000</item>
+        <item>17000</item>
+        <item>18000</item>
+        <item>19000</item>
+        <item>20000</item>
+        <item>21000</item>
+        <item>22000</item>
+        <item>23000</item>
+        <item>24000</item>
+        <item>25000</item>
+        <item>26000</item>
+        <item>27000</item>
+        <item>28000</item>
+        <item>29000</item>
+        <item>30000</item>
+        <item>35000</item>
+        <item>40000</item>
+        <item>45000</item>
+        <item>50000</item>
+        <item>55000</item>
+        <item>60000</item>
+        <item>65000</item>
+        <item>70000</item>
+        <item>75000</item>
+        <item>80000</item>
+        <item>85000</item>
+        <item>90000</item>
+        <item>95000</item>
+        <item>100000</item>
+    </integer-array>
+    <integer-array name="config_screenBrighteningThresholds">
+        <item>0</item>
+    </integer-array>
+    <integer-array name="config_screenDarkeningThresholds">
+        <item>0</item>
+    </integer-array>
+    <integer-array name="config_screenThresholdLevels">
+    </integer-array>
+    <bool name="config_adaptive_sleep_available">true</bool>
+    <bool name="config_batterySaverTurnedOffNotificationEnabled">false</bool>
+    <bool name="config_displayBlanksAfterDoze">false</bool>
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+    <bool name="config_enableAutoPowerModes">true</bool>
+    <bool name="config_spatial_audio_head_tracking_enabled_default">true</bool>
+    <bool name="config_telephony5gNonStandalone">true</bool>
+    <bool name="config_telephony5gStandalone">true</bool>
+    <item name="config_screenBrightnessDimFloat" format="float" type="dimen">0.000855</item>
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.07496</item>
+    <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.000855</item>
+    <fraction name="config_autoBrightnessAdjustmentMaxGamma">100%</fraction>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
+    <integer name="config_batterySaver_full_soundTriggerMode">0</integer>
+    <integer name="config_brightness_ramp_rate_fast">4932</integer>
+    <integer name="config_brightness_ramp_rate_slow">3946</integer>
+    <integer name="config_shutdownBatteryTemperature">580</integer>
+</resources>

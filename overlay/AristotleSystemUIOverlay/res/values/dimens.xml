@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <dimen name="max_shade_window_blur_radius">17.0dip</dimen>
+
+    <!-- Rounded corners -->
+    <dimen name="rounded_corner_content_padding">30px</dimen>
+
+    <!-- Status bar padding around the cutout / rounded corners -->
+    <dimen name="status_bar_padding_start">36px</dimen>
+    <dimen name="status_bar_padding_end">36px</dimen>
+    <dimen name="status_bar_padding_top">12px</dimen>
+</resources>
